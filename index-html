@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+ <header>
+    <div class="header-logo"><img src="images/image0.png"></div>
+    <div class="open-time">
+        <p>営業時間</p>
+        <p>平日    9:00～17:00</p>
+        <p>土日祝  8:30～17:00</p>
+    </div>
+    <div class="header-btn">
+        <a href>お問い合わせ</a>
+    </div>
+ </header>
+
+ <div class="top-wrapper">
+    <div class="img-frame">
+        <div class="img-01"></div>
+        <div class="img-02"></div>
+        <div class="img-03"></div>
+     </div>
+ </div>
+ 
+ <div class="news">
+    <h2>MOO MOO NEWS</h2>
+    <h3>もーもーニュース</h3>
+    <ul class="news-list">
+        <li class="item">
+            <a href="#">
+                <p class="date">2025/7/15</p>
+                <p class="category"><span>お知らせ</span></p>
+                <p class="title">もーもー王国のひまわりが咲きました。</p>
+            </a>
+        </li>
+        <li class="item">
+            <a href="#">
+                <p class="date">2024/9/27</p>
+                <p class="category"><span>お知らせ</span></p>
+                <p class="title">秋の牧場スケッチ大会開催について</p>
+            </a>
+        </li>
+        <li class="item">
+            <a href="#">
+                <p class="date">2024/8/1</p>
+                <p class="category"><span>お知らせ</span></p>
+                <p class="title">夏季営業時間について</p>
+            </a>
+        </li>
+    </ul>
+    <a class="view-btn" href="#">もっと見る</a>
+ </div>
+
+ <div class="information-wrapper">
+    <div class="container">
+        <div class="heading">
+            <h2>INFORMATION</h2>
+             <h3>ご紹介</h3>
+        </div>
+        <div class="informations">
+            <div class="information">
+                <div class="i-icon">
+                    <a href="#" class="icon-btn">
+                    <img src="images/asobu.png">
+                    </a>
+                </div>
+                <div class="i-icon">
+                    <a href="#" class="icon-btn">
+                    <img src="images/taberu.png">
+                    </a>
+                </div>
+                <div class="i-icon">
+                    <a href="#" class="icon-btn">
+                    <img src="images/taiken.png"></a>
+                </div>
+                <div class="i-icon">
+                    <a href="#" class="icon-btn">
+                    <img src="images/miyage.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+ </div>
+
+
+
+ <footer>
+    <div class="f-container">
+        <img src="images/image0.png">
+        <div class="ticket-btn">
+            <a href>Webチケット購入はこちらから</a>
+        </div>
+        <h5>〒808―1234  ○○県○○市○○123―4<br>
+         TEL.0123-45-6789  FAX.0987-65-4321  E-mail.info@moomook.com</h5>
+         <p >©2025  Moomoo kingdam </p>
+    </div>
+ </footer>  
+
+</body>
+</html>

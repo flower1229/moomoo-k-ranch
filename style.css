@@ -1,0 +1,255 @@
+body{
+  margin: 0;
+}
+h2{
+    color: rgb(81, 54, 37);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: Comic Sans MS;
+}
+h3{
+   color: rgb(93, 78, 69);
+    font-size: 15px;
+    text-align: center;
+    margin-top: 5px;
+    font-family: Meiryo;
+}
+
+/*header*/
+.header-logo img{
+ width: 125px;
+ height: 90px;
+}
+.open-time{
+    margin-left: 15px;
+}
+.open-time p{
+    font-size: 13px;
+    line-height: 1;
+    font-family: Meiryo;
+    color: #4d482a;
+}
+.header-btn{
+    padding: 5px 15px 5px 15px;
+    margin-top: 25px;
+    margin-left: 850px;
+    margin-bottom: 40px;
+    background-color: #74d750;
+    font-size: 15px;
+    border-radius: 4px;
+    box-shadow: 0px 7px #43a02c;
+    opacity: 0.8;
+}
+.header-btn:active{
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+    opacity: 1;
+  }
+.header-btn a{
+    text-decoration: none;
+    color: #f0eee3;
+}
+header{
+    display: flex;
+    background-color: #e0efd6;
+    
+}
+
+/* main */
+.img-frame{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.img-frame::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(253, 255, 241, 0.126);
+}
+@media screen and (max-width: 767px){
+.img-frame{
+  width: 100%;
+  height: 200px;
+}
+}
+.img-01, .img-02, .img-03{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img-01{
+  background-image: url('images/main1.png');
+  animation: slide-animation-01 10s infinite;
+}
+.img-02{
+  background-image: url('images/main2.png');
+  animation: slide-animation-02 10s infinite;
+}
+.img-03{
+  background-image: url('images/main3.png');
+  animation: slide-animation-03 10s infinite;
+}
+
+@keyframes slide-animation-01 {
+   0% {opacity: 1; transform: scale(1.0);}
+ 30% {opacity: 1;}
+ 40% {opacity: 0; transform: scale(1.15);}
+ 90% {opacity: 0}
+100% {opacity: 1; transform: scale(1.0);}
+}
+@keyframes slide-animation-02 {
+   0% {opacity: 0;}
+ 30% {opacity: 0; transform: scale(1.1);}
+ 40% {opacity: 1;}
+ 60% {opacity: 1;}
+ 70% {opacity: 0; transform: scale(1.0);}
+100% {opacity: 0;}
+}
+@keyframes slide-animation-03 {
+   0% {opacity: 0;}
+ 60% {opacity: 0;  transform: scale(1.0);}
+ 70% {opacity: 1;}
+ 90% {opacity: 1;}
+100% {opacity: 0; transform: scale(1.1);}
+}
+
+
+/*news*/
+.news{
+  background-color: #e0efd6;
+  padding-bottom: 16px;
+}
+.news-list{
+    list-style: none outside;
+    margin: 0;
+    padding: 0;
+  }
+  .news-list .item a{
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #CCC;
+    padding: 20px 20px;
+  }
+  .news-list .item:first-child a{
+    border-top: 1px solid #CCC;
+  }
+  .news-list .item .date{
+    margin: 0;
+    min-width: 140px;
+    font-size: 16px;
+    color: #999;
+    padding: 0 20px 0 0;
+  }
+  .news-list .item .category{
+    margin: 0;
+    min-width: 140px;
+    padding: 0 20px 0 0;
+  }
+  .news-list .item .category span{
+    background: #97bc55;
+    color: #FFF;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 12px;
+    line-height: 1;
+  }
+  .news-list .item .title{
+    margin: 0;
+    width: 100%;
+  }
+  .news-list .item a:hover .title{
+    color: #00F;
+  }
+  .view-btn{
+    display: block;
+    background-color: #97bc55;
+    color: #FFF;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 530px;
+    width: 130px;
+    height: 30px;
+    padding: 10px 10px 5px 50px; 
+    border-radius: 100px;
+  }
+ .news h2{
+  margin-top: 0;
+    padding-top: 8px;
+  } 
+  /*informations*/
+  .information-wrapper{
+    height: 540px;
+    background-size: cover;
+    background-image:url(images/info-image.png) ;
+  }
+  
+  .i-icon{
+    position: relative;
+  }
+  .i-icon img{
+    width: 250px;
+    height: 350px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+  
+  }
+  .heading h2{
+    padding-top: 50px;
+    margin-top: 0;
+    padding-bottom: 8px;
+  }
+  
+  .icon-btn{
+      width: fit-content;
+  }
+
+  /*footer*/
+  footer{
+    background-color: #e0efd6;
+    height: 300px;
+  }
+  
+  .f-container img{
+    width: 160px;
+    height: 120px;
+   margin-left: 520px;
+   margin-top: 20px;
+  }
+  .ticket-btn a{
+    color: #4d482a;
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    margin-left: 490px;
+    margin-right: 490px;
+    background-color: #e0efd6;
+    border: 1px #67713e solid;
+    font-size: 15px;
+  }
+  .f-container h5{
+    font-size: 13px;
+    color: #70784a;
+    text-align: center;
+  }
+ .f-container p{
+  text-align: center;
+  color: #b9b69b;
+  size: 6px;
+}
